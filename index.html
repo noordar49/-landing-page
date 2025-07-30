@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accessible Landing Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      color: #222;
+    }
+
+    header {
+      background-color: #004080;
+      color: #fff;
+      padding: 1rem;
+    }
+
+    nav a {
+      color: #fff;
+      margin-right: 1rem;
+      text-decoration: none;
+    }
+
+    nav a:focus, nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    h1, h2 {
+      color: #004080;
+    }
+
+    .cta-button {
+      background-color: #004080;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+      border-radius: 4px;
+    }
+
+    .cta-button:focus, .cta-button:hover {
+      background-color: #003060;
+    }
+
+    footer {
+      background-color: #eee;
+      padding: 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav aria-label="Main navigation">
+      <a href="#main-content">Skip to content</a>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main-content" class="container">
+    <h1>Welcome to Your Accessible Site</h1>
+    <p>This is a simple, clean, and accessible landing page. It’s built with inclusive design in mind, following accessibility best practices.</p>
+    <button class="cta-button" aria-label="Learn more about our services">Learn More</button>
+  </main>
+
+  <footer>
+    &copy; 2025 Your Company Name. All rights reserved.
+  </footer>
+</body>
+</html>
